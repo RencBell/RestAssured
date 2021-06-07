@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
-public class AutomateGet {
+public class AutomateGetTest {
 
     @Test
     public void validate_status_code() {
@@ -42,7 +42,7 @@ public class AutomateGet {
         given().
                 baseUri("https://api.postman.com").
                 header("X-Api-Key", "PMAK-6073f78c9486d000422c421b-d56b8379bb04893a118064a60dd8b4c498").
-                log().headers(). // PRINTS JUST THE HEADERS
+                log().headers(). // PRINTS JUST THE HEADER
                 when().
                 get("/workspaces").
                 then().

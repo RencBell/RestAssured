@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
-public class NonStaticImports {
+public class NonStaticImportsTest {
 
     @Test
     public void simple_test_case() {

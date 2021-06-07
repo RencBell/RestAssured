@@ -1,6 +1,6 @@
 package com.rest;
 
-public class MethodChaining {
+public class MethodChainingTest {
 
     public static void main(String[] args){
         a1().
@@ -8,17 +8,17 @@ public class MethodChaining {
         a3();
     }
 
-    public static MethodChaining a1(){
+    public static MethodChainingTest a1(){
         System.out.println("this is a1 method");
-        return new MethodChaining();
+        return new MethodChainingTest();
     }
 
-    public MethodChaining a2(){
+    public MethodChainingTest a2(){
         System.out.println("this is a2 method");
         return this;
     }
 
-    public MethodChaining a3(){
+    public MethodChainingTest a3(){
         System.out.println("this is a3 method");
         return this;
     }
